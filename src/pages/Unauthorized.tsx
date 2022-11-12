@@ -1,9 +1,6 @@
 import React from "react";
-import { useAppSelector } from "../redux/store";
 
 const Unauthorized = () => {
-  const user = useAppSelector((state) => state.user.user);
-
   return (
     <div className="min-w-screen flex min-h-screen items-center justify-center bg-gradient-to-r from-indigo-600 to-blue-400 px-5 py-5">
       <div className="rounded-md bg-white px-40 py-20 shadow-xl">

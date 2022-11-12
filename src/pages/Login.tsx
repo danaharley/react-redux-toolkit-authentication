@@ -32,6 +32,7 @@ const Login = () => {
   const location = useLocation();
 
   const from = ((location.state as any)?.from.pathname as string) || "/profile";
+  console.log("from", from);
 
   useEffect(() => {
     if (isSuccess) {

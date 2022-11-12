@@ -19,8 +19,8 @@ const RequiredUser = ({ allowedRoles }: { allowedRoles: string[] }) => {
 
   const user = userApi.endpoints.getMe.useQueryState(null);
 
-  return cookies.logged_in ||
-    (user && allowedRoles.includes(user.data?.role as string)) ? (
+  return (cookies.logged_in || user) &&
+    allowedRoles.includes(user.data?.role as string) ? (
     <Outlet />
   ) : cookies.logged_in && user ? (
     <Navigate to="/unauthorized" state={{ from: location }} replace />
