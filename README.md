@@ -7,8 +7,8 @@
 #### Clone the final branch from the backend
 
 ```
-$ git clone --single-branch --branch refresh_tokoen https://github.com/danaharley/nodejs_jwt_authentication_authorization.git
-$ cd nodejs_jwt_authentication_authorization
+$ git clone https://github.com/danaharley/nodejs-auth-jwt.git
+$ cd nodejs-auth-jwt
 $ npm install or yarn install
 ```
 
